@@ -1,0 +1,28 @@
+-- local lsp = require('lsp-zero').preset({})
+--
+-- lsp.preset('recommended')
+--
+-- lsp.ensure_isntalled({
+--   'tsserver',
+-- })
+--
+-- -- Configure TypeScript and React settings
+-- lsp.on_attach(function(client, bufnr)
+--   local opts = { buffer = bufnr, remap = false }
+--
+--   -- Custom mappings (optional)
+--   vim.keymap.set("n", "gd", vim.lsp.buf.definition, opts)
+--   vim.keymap.set("n", "K", vim.lsp.buf.hover, opts)
+--   -- Add other key mappings as needed
+-- end)
+--
+-- -- (Optional) Additional settings for `tsserver`
+-- require('lspconfig').tsserver.setup {
+--   on_attach = function(client, bufnr)
+--     -- Disable `tsserver` formatting if you plan to use another formatter like `null-ls`
+--     client.resolved_capabilities.document_formatting = false
+--   end
+-- }
+--
+-- -- Start LSP
+-- lsp.setup()
